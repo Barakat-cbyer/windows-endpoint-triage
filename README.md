@@ -80,6 +80,14 @@ The event showed:
 
 ![Successful Logon](screenshots/Sucessful%20logon.png)
 
+## Key Findings
+
+- I confirmed the basic system information and administrator accounts on the endpoint.
+- I reviewed running processes and active network connections.
+- I generated a controlled failed login and found the related Event ID `4625`.
+- I repeated the login with the correct password and found Event ID `4624`.
+- I did not find anything from this exercise that showed the system was compromised.
+
 ## Troubleshooting
 
 At first, I could not access the Windows Security log because PowerShell was not running with administrator privileges. I reopened PowerShell as Administrator and was able to access the logs.
